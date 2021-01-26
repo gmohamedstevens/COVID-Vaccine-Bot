@@ -13,7 +13,7 @@
 ***
 #### Accomplished So Far
 - Pulls data from GitHub CSV and parses list of countries
-- Able to update status using authentication keys
+- Use authentication keys for account access (tweets, profile changes, etc.)
 
 ***
 #### Planned Features
