@@ -7,14 +7,15 @@
 # IMPORT LIBRARIES #
 ####################
 import multiprocessing
-import threading
 import sys
+import tweepy
+from country import *
 
 
 ##################
 # INITIALIZATION #
 ##################
-
+country_list = CountryList()
 
 #############
 # PROCESSES #
@@ -40,7 +41,8 @@ def end_processes():
 #####################
 if __name__ == '__main__':
     try:
-        start_processes()
+        print("Program started.")
+        # start_processes()
         # Loop until keyboard interrupt is thrown
         main_loop_flag = True
         while main_loop_flag:
