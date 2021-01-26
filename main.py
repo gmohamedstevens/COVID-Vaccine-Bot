@@ -1,7 +1,5 @@
 # COVID Vaccine Twitter Bot
 # by Gamal Mohamed
-#
-#
 
 ####################
 # IMPORT LIBRARIES #
@@ -10,12 +8,14 @@ import multiprocessing
 import sys
 import tweepy
 from country import *
+from bot import *
 
 
 ##################
 # INITIALIZATION #
 ##################
 country_list = CountryList()
+twitter_bot = TwitterBot()
 
 #############
 # PROCESSES #
@@ -49,8 +49,8 @@ if __name__ == '__main__':
             pass
     # Graceful exit on keyboard interrupt
     except KeyboardInterrupt:
-        print()
-        end_processes()
+        # end_processes()
         # Exit program
+        twitter_bot.set_description(Status.OFFLINE)
         print("Exiting program.")
         sys.exit(0)
