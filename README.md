@@ -9,15 +9,18 @@
 - *pandas* - For reading csv from GitHub and to provide data processing
 - *collecitons* - For the OrderedDict class; for getting the list of counries from the GitHub csv
 - *enum* - Enumeration of tweet types and status
+- *Requests-OAuthlib* - Perform oAuth authentication for bot accounts
 
 ***
 #### Accomplished So Far
 - Pulls data from GitHub CSV and parses list of countries
 - Uses authentication keys for account access (tweets, profile changes, etc.)
+- oAuth handling for tweeting on behalf of bot account (@covacc_global and @covacc_usa)
 
 ***
 #### Planned Features
 - Get total population data from trusted source
 - Analyze log entries for tweetable facts
 - Generate bar chart comparing country vaccination progress (per 100 citizens)
-- Tweet on behalf of another account (oAuth?)
+- Begin tweeting!
+- Automatically retweet articles related to the COVID vaccine? Or maybe retweeting articles in a semi-supervised fashion
