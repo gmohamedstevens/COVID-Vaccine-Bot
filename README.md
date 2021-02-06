@@ -1,15 +1,17 @@
-### COVID Vaccination Twitter Bot
+### COVID Vaccination Twitter Bot (@covacc_global & @covacc_usa)
 ###### By Gamal Mohamed
 
 **Description:** A Twitter bot that pulls world COVID vaccination records from a GitHub source and tweets comparisons and fun facts of country progress
 
 ***
 #### Python Dependencies & Libraries
+- *Python v3.9*
 - *Tweepy* - For accessing Twitter API and handling Tweeting functions
 - *pandas* - For reading csv from GitHub and to provide data processing
-- *collecitons* - For the OrderedDict class; for getting the list of counries from the GitHub csv
+- *collections* - For the OrderedDict class; for getting the list of counries from the GitHub csv
 - *enum* - Enumeration of tweet types and status
 - *Requests-OAuthlib* - Perform oAuth authentication for bot accounts
+- *emoji-country-flag* - Get country flag emoji to add pizzazz to tweets (using v1.2.3)
 
 ***
 #### Accomplished So Far
