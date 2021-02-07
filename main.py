@@ -7,14 +7,13 @@
 import multiprocessing
 import sys
 import tweepy
-from country import *
+from location import *
 from bot import *
-
 
 ##################
 # INITIALIZATION #
 ##################
-country_list = CountryList()
+location_list = LocationList()
 twitter_bot = TwitterBot()
 
 #############
